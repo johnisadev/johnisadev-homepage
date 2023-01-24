@@ -2,13 +2,13 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
-import { DogSpinner, DogContainer } from './voxel-dog-loader'
+import { CarSpinner, CarContainer } from './voxel-car-loader'
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
 }
 
-const VoxelDog = () => {
+const VoxelCar = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
@@ -119,8 +119,8 @@ const VoxelDog = () => {
   }, [handleWindowResize])
 
   return (
-    <DogContainer ref={refContainer}>{loading && <DogSpinner />}</DogContainer>
+    <CarContainer ref={refContainer}>{loading && <CarSpinner />}</CarContainer>
   )
 }
 
-export default VoxelDog
+export default VoxelCar

@@ -17,7 +17,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
@@ -29,23 +29,12 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        css={{ backdropFilter: 'blur(10px)' }}
-      >
-        Hello, I&apos;m an indie app developer based in Japan!
-      </Box>
-
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            John Knowles
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Internet Architect ( Design & Develop)</p>
         </Box>
         <Box
           flexShrink={0}
@@ -64,7 +53,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/profile.jpg"
               alt="Profile image"
               borderRadius="full"
               width="100"
@@ -73,32 +62,26 @@ const Home = () => (
           </Box>
         </Box>
       </Box>
+      <Box
+        borderRadius="lg"
+        mb={6}
+        mt={6}
+        p={3}
+        textAlign="center"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        css={{ backdropFilter: 'blur(10px)' }}
+      >
+        Hello, I&apos;m an Web Developer with a focus on HTML emails & microsites!
+      </Box>
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          Bio
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
-            Inkdrop
-          </Link>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
-          >
-            Dev as Life
-          </Link>
-          &quot; has more than 100k subscribers.
+          John is a freelance and Front-End developer based in North Carolina with a
+          passion for creating eye-catching HTML emails and microsites. He has a knack
+          for all things in the niche field of email marketing, from Designing, Devloping and Testing.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -115,42 +98,40 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          History
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>2018</BioYear>
+          Full stack Web Devlopment Certification Completion @ UNCC 
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2019</BioYear>
+          Senior Full Stack Web Development Tutor @ edX
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2021</BioYear>
+          SAP Variant Configuration Dveloper @ Columbus McKinnon Corp.
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
+          <BioYear>2023 to present</BioYear>
+          Contract HTML email Developer
         </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          Intrests
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
+          Open Source, Linux, Artificial Intellegence,{' '}
+          <Link href="https://www.youtube.com/watch?v=ouYtHEyMcHY&t=575s" target="_blank">
+            Drifting
           </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
+          , Music,{' '}
+          <Link href="https://www.youtube.com/watch?v=y8_AaQTG4Hw" target="_blank">
+            The Persona Video Game Series
           </Link>
-          , Leica, Machine Learning
+          , Modding/Jailbreaking just about any electronic device I can... I void Warrenties B)
         </Paragraph>
       </Section>
 
@@ -166,33 +147,22 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @johnisadev
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://www.linkedin.com/in/johnaknowles/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                leftIcon={<IoLogoLinkedin />}
               >
-                @inkdrop_app (English)
+                John Knowles Linkedin
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
+          {/* <ListItem>
             <Link href="https://instagram.com/craftzdog" target="_blank">
               <Button
                 variant="ghost"
@@ -202,7 +172,7 @@ const Home = () => (
                 @craftzdog
               </Button>
             </Link>
-          </ListItem>
+          </ListItem> */}
         </List>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
