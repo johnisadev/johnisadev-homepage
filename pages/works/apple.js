@@ -26,7 +26,7 @@ const Work = () => (
 
         <ListItem>
         <Meta>See email live</Meta>
-          <Link href="https://johnisadev.github.io/purple-transactional-email/"target="_blank">
+          <Link href="https://johnisadev.github.io/apple-transactional-email/" target="_blank">
           Github Page <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>

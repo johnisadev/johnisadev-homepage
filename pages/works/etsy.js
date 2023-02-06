@@ -30,7 +30,7 @@ const Work = () => (
         <ListItem>
         <Meta>See email live</Meta>
           <Link href="https://johnisadev.github.io/etsy-award-winners-email/" target='_blank'>
-            Etsy 2022 Award Winners{' '}
+            Github Pages{' '}
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
