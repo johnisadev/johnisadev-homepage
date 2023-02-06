@@ -13,7 +13,7 @@ import {
   import Layout from '../../components/layouts/article'
   
   const Work = () => (
-    <Layout title="The four painters">
+    <Layout title="True Grit Promotional">
       <Container>
         <Title>
           Apple Transactional <Badge>2023</Badge>

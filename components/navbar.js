@@ -113,12 +113,12 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="/">
                   About
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/works">
-                  Works
+                <MenuItem as={MenuLink} href="/contact">
+                  Contact
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/posts">
+                {/* <MenuItem as={MenuLink} href="/posts">
                   Posts
-                </MenuItem>
+                </MenuItem> */}
                 {/* <MenuItem as={MenuLink} href="https://uses.craftz.dog/">
                   Uses
                 </MenuItem> */}

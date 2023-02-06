@@ -126,7 +126,7 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          Intrests
+          Interests
         </Heading>
         <Paragraph>
           Open Source, Linux, Artificial Intellegence,{' '}
