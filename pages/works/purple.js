@@ -3,8 +3,7 @@ import {
   Badge,
   Link,
   List,
-  ListItem,
-  AspectRatio
+  ListItem
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
@@ -24,13 +23,13 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>See email live</Meta>
-          <Link href="https://johnisadev.github.io/purple-transactional-email/">
-          https://johnisadev.github.io/purple-transactional-email/ <ExternalLinkIcon mx="2px" />
+          <Link href="https://johnisadev.github.io/purple-transactional-email/" target="_blank">
+          Github Page <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
         <Meta>See Figma Design live</Meta>
-          <Link href="https://www.figma.com/proto/f0niG1Eq3AA7UVZX7XLdD7/purple-transactional-email-(Copy)?page-id=0%3A1&node-id=2%3A2&viewport=737%2C292%2C0.51&scaling=min-zoom">
+          <Link href="https://www.figma.com/proto/f0niG1Eq3AA7UVZX7XLdD7/purple-transactional-email-(Copy)?page-id=0%3A1&node-id=2%3A2&viewport=737%2C292%2C0.51&scaling=min-zoom" target='_blank'>
           Figma Design File Link <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>

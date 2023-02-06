@@ -1,18 +1,14 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbPurple from '../public/images/works/purple-email-eyecatch.png'
 import thumbEtsy from '../public/images/works/etsy-email-eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
-import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
-import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
-import thumbStyly from '../public/images/works/styly_eyecatch.png'
-import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
-import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
-import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
+import thumbApple from '../public/images/works/apple-transactional-eyecatch.png'
+import thumbLitmus from '../public/images/works/litmus-email-eyecatch.png'
+import thumbTruegrit from '../public/images/works/truegrit-email-eyecatch.png'
+import thumbUplers from '../public/images/works/uplers-email-eyecatch.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -23,8 +19,13 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="purple" title="Purple Transactional Email" thumbnail={thumbPurple}>
-            Designed & Developed Purple mattress transactional email using Figma & MJML.
+          <WorkGridItem
+            id="purple"
+            title="Purple Transactional Email"
+            thumbnail={thumbPurple}
+          >
+            Designed & Developed Purple mattress transactional email using Figma
+            & MJML.
           </WorkGridItem>
         </Section>
         <Section>
@@ -39,23 +40,44 @@ const Works = () => (
 
         <Section delay={0.1}>
           <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
+            id="apple"
+            title="Apple Transactional Email"
+            thumbnail={thumbApple}
           >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+            A transactional email developed using MJML.
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
+          <WorkGridItem
+            id="litmus"
+            thumbnail={thumbLitmus}
+            title="Litmus Newsletter Email"
+          >
+            A customized newsletter email template.
+          </WorkGridItem>
+        </Section>
+
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="truegrit"
+            title="True Grit Texture Supply Promotional Email"
+            thumbnail={thumbTruegrit}
+          >
+            A Promotional email using True Grit Texture Supply branding.
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="uplers"
+            thumbnail={thumbUplers}
+            title="Uplers Promotional Email"
+          >
+            A Promotional email using Uplers company branding.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
 
-      <Section delay={0.2}>
+      {/* <Section delay={0.2}>
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
@@ -115,7 +137,7 @@ const Works = () => (
             Windows
           </WorkGridItem>
         </Section>
-      </SimpleGrid>
+      </SimpleGrid> */}
     </Container>
   </Layout>
 )

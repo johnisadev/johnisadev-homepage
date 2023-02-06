@@ -5,7 +5,6 @@ import {
   List,
   ListItem,
   SimpleGrid,
-  UnorderedList,
   Heading,
   Center
 } from '@chakra-ui/react'
@@ -30,7 +29,7 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
         <Meta>See email live</Meta>
-          <Link href="https://johnisadev.github.io/etsy-award-winners-email/">
+          <Link href="https://johnisadev.github.io/etsy-award-winners-email/" target='_blank'>
             Etsy 2022 Award Winners{' '}
             <ExternalLinkIcon mx="2px" />
           </Link>

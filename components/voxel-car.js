@@ -12,7 +12,7 @@ const VoxelCar = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://craftzdog.global.ssl.fastly.net/homepage' : '') + '/dog.glb'
+  const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://johnisadev.com' : '') + '/dog.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
@@ -43,7 +43,7 @@ const VoxelCar = () => {
       refRenderer.current = renderer
       const scene = new THREE.Scene()
 
-      const target = new THREE.Vector3(-0.5, 1.2, 0)
+      const target = new THREE.Vector3(0, 0, 0)
       const initialCameraPosition = new THREE.Vector3(
         20 * Math.sin(0.2 * Math.PI),
         10,
@@ -69,6 +69,7 @@ const VoxelCar = () => {
 
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
+      controls.autoRotateSpeed *= -1
       controls.target = target
 
       loadGLTFModel(scene, urlDogGLB, {
@@ -92,9 +93,9 @@ const VoxelCar = () => {
 
           camera.position.y = 10
           camera.position.x =
-            p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
+            p.x * Math.cos(rotSpeed) - p.z * Math.sin(rotSpeed)
           camera.position.z =
-            p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
+            p.z * Math.cos(rotSpeed) + p.x * Math.sin(rotSpeed)
           camera.lookAt(target)
         } else {
           controls.update()

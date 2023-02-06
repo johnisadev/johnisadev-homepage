@@ -4,7 +4,6 @@ import {
   Container,
   Heading,
   Box,
-  SimpleGrid,
   Button,
   List,
   ListItem,
@@ -16,10 +15,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -34,7 +30,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             John Knowles
           </Heading>
-          <p>Internet Architect ( Design & Develop)</p>
+          <p>Email Architect ( Design & Develop)</p>
         </Box>
         <Box
           flexShrink={0}
@@ -79,9 +75,9 @@ const Home = () => (
           Bio
         </Heading>
         <Paragraph>
-          John is a freelance and Front-End developer based in North Carolina with a
+          John is a freelance and Email developer based in North Carolina with a
           passion for creating eye-catching HTML emails and microsites. He has a knack
-          for all things in the niche field of email marketing, from Designing, Devloping and Testing.
+          for all things in the niche field of email marketing. From Designing, Devloping and Testing.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -94,6 +90,16 @@ const Home = () => (
             My portfolio
           </Button>
         </Box>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Skills
+        </Heading>
+        <Paragraph>
+          HTML, CSS, Figma, PhotoShop, JavaScript, AJAX, JQuery, MJML, MailChimp, CAN-SPAM,
+           HTML Tables, Litmus, Email Acessability, A/B Testing
+        </Paragraph>
       </Section>
 
       <Section delay={0.2}>
@@ -114,7 +120,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2023 to present</BioYear>
-          Contract HTML email Developer
+          HTML Email Developer
         </BioSection>
       </Section>
 
@@ -162,47 +168,7 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
-          {/* <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem> */}
         </List>
-
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;100k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid>
-
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="/posts"
-            scroll={false}
-            rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
-          >
-            Popular posts
-          </Button>
-        </Box>
       </Section>
     </Container>
   </Layout>
