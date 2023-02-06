@@ -12,7 +12,7 @@ const VoxelCar = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://johnisadev.com' : '') + '/dog.glb'
+  const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://polite-flan-fef882.netlify.app' : '') + '/dog.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
