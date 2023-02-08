@@ -67,7 +67,8 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an Web Developer with a focus on HTML emails & microsites!
+        Hello, I&apos;m an Web Developer with a focus on HTML emails &
+        microsites!
       </Box>
 
       <Section delay={0.1}>
@@ -75,9 +76,10 @@ const Home = () => (
           Bio
         </Heading>
         <Paragraph>
-          John is a freelance and Email developer based in North Carolina with a
-          passion for creating eye-catching HTML emails and microsites. He has a knack
-          for all things in the niche field of email marketing. From Designing, Devloping and Testing.
+          John is a freelance email developer based in North Carolina with a
+          passion for creating eye-catching HTML emails and microsites. He has a
+          knack for all things in the niche field of email marketing including
+          designing, developing, and testing.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -97,8 +99,9 @@ const Home = () => (
           Skills
         </Heading>
         <Paragraph>
-          HTML, CSS, Figma, PhotoShop, JavaScript, AJAX, JQuery, MJML, MailChimp, CAN-SPAM,
-           HTML Tables, Litmus, Email Acessability, A/B Testing
+          HTML, CSS, Figma, PhotoShop, JavaScript, AJAX, JQuery, MJML,
+          MailChimp, CAN-SPAM, HTML Tables, Litmus, Email Acessability, A/B
+          Testing
         </Paragraph>
       </Section>
 
@@ -108,7 +111,7 @@ const Home = () => (
         </Heading>
         <BioSection>
           <BioYear>2018</BioYear>
-          Full stack Web Devlopment Certification Completion @ UNCC 
+          Full stack Web Devlopment Certification Completion @ UNCC
         </BioSection>
         <BioSection>
           <BioYear>2019</BioYear>
@@ -130,14 +133,21 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Open Source, Linux, Artificial Intellegence,{' '}
-          <Link href="https://www.youtube.com/watch?v=ouYtHEyMcHY&t=575s" target="_blank">
+          <Link
+            href="https://www.youtube.com/watch?v=ouYtHEyMcHY&t=575s"
+            target="_blank"
+          >
             Drifting
           </Link>
           , Music,{' '}
-          <Link href="https://www.youtube.com/watch?v=y8_AaQTG4Hw" target="_blank">
+          <Link
+            href="https://www.youtube.com/watch?v=y8_AaQTG4Hw"
+            target="_blank"
+          >
             The Persona Video Game Series
           </Link>
-          , Modding/Jailbreaking just about any electronic device I can... I void Warrenties B)
+          , Modding/Jailbreaking just about any electronic device I can... I
+          void Warrenties B)
         </Paragraph>
       </Section>
 
@@ -158,7 +168,10 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://www.linkedin.com/in/johnaknowles/" target="_blank">
+            <Link
+              href="https://www.linkedin.com/in/johnaknowles/"
+              target="_blank"
+            >
               <Button
                 variant="ghost"
                 colorScheme="teal"
