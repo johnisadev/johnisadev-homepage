@@ -16,11 +16,11 @@ import {
     <Layout title="True Grit Promotional">
       <Container>
         <Title>
-          Apple Transactional <Badge>2023</Badge>
+          True Grit Promotional <Badge>2023</Badge>
         </Title>
         <P>
-          A Transactional email using Apple branding that displays a cost breakdown of
-          a recent purchase.
+          A promotional email using True Grit Supply branding that utilizing a responsive
+          multi-colmn layout.
         </P>
         <List ml={4} my={4}>
   
